@@ -1,0 +1,3 @@
+*.xbps binary -delta
+*.xbps.sig2 binary -delta
+aarch64-repodata binary
