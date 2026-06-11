@@ -4,6 +4,10 @@
 # 1. Clean the deck of detached sigs
 rm -f *.sig2
 
+# 1a. Purge the ghosts
+echo "[+] Scrubbing the manifest..."
+xbps-rindex --clean .
+
 # 2. Build/Refresh the manifest from scratch
 # This is mandatory since you moved files manually from the Factory to the Vault
 echo "[+] Adding packages to the manifest..."
